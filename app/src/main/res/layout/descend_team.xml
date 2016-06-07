@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descend team:"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTeamsDescend"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ascend team:"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTeamAscend"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:hint="Name of new team"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameCityAscend"
+        android:layout_gravity="center_horizontal"
+        android:hint="Name of city"/>
+
+    <Button
+        android:id="@+id/onAscend"
+
+        android:text="Ascend"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:onClick="onAscendTeam"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

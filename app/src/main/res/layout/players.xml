@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New player:"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name of new player"
+            android:ems="10"
+            android:id="@+id/nameNewPlayerEditText"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team of the new player:"
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerOfTeamsOnPlayers">
+    </Spinner>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listOfPlayersOnPlayers"
+        android:layout_marginTop="15dp">
+    </ListView>
+
+    <Button
+        android:id="@+id/addNewPlayer"
+
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:onClick="onAddPressed"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

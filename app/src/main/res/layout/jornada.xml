@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="1"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_marginTop="20dp">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Round 1"
+    android:id="@+id/jornadaLabel"
+    android:textSize="25dp"
+    android:textStyle="bold|italic"
+    android:textColor="#333"
+    android:layout_gravity="center_horizontal" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Game 0/5"
+    android:id="@+id/partitsLabel"
+    android:textSize="25dp"
+    android:textStyle="bold|italic"
+    android:textColor="#333"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local team:"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerOfTeamsLocalOnJornada"
+        android:layout_marginLeft="25dp">
+    </Spinner>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visitant team:"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerOfTeamsVisitantOnJornada">
+    </Spinner>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/addJornadaOnJornada"
+
+        android:text="Add goals"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+
+        android:layout_width="151dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:onClick="onAddGoalsPressed"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>

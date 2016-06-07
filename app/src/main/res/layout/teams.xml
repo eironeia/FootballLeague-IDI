@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New team:"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamShieldImageView" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name of new team"
+        android:ems="10"
+        android:id="@+id/nameNewTeamEditText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City name:"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#333"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name of city"
+        android:ems="10"
+        android:id="@+id/nameCityEditText" />
+
+    <!--<Spinner-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/spinnerOfTeamsOnTeams"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listOfTeamsOnTeams"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/addNewTeam"
+
+            android:text="Add team"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+
+            android:layout_width="151dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#000000"
+            android:shadowRadius="5"
+            android:onClick="onAddTeamPressed"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/addTeamShield"-->
+
+            <!--android:text="Add team shield"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="15sp"-->
+
+            <!--android:layout_width="151dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@drawable/buttonshape"-->
+            <!--android:shadowColor="#000000"-->
+            <!--android:shadowRadius="5"-->
+            <!--android:onClick="onAddTeamShield"-->
+            <!--/>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
